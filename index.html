@@ -3,7 +3,6 @@
 
 <head>
     <meta data-n-head="ssr" charset="utf-8">
-    <title>Accueil | Skyloria</title>
     <meta data-n-head="ssr" name="viewport" content="width=device-width, initial-scale=1">
     <meta data-n-head="ssr" data-hid="description" name="description" content="">
     <link rel="icon" type="image/png" href="./src/img/sky2.png">
@@ -13,30 +12,6 @@
 
 <body>
     <button onClick="console.log('bonjour, oui?')">TESTE</button>
-    <header>
-        <div class="container">
-            <div class="content">
-                <a>Accueil</a>
-                <a>News</a>
-                <a>Support</a>
-                <a>Boutique</a>
-                <a id="Login">Se connecter</a>
-                <a id="Register">S'inscrire</a>
-            </div>
-        </div>
-
-        <div class="dropdown">
-            <button class="menu" onclick="functionMenu()"><i class="fa-solid fa-bars-staggered"></i></button>
-            <div id="menuDrop" class="drop-content">
-                <a>Accueil</a>
-                <a>News</a>
-                <a>Support</a>
-                <a>Boutique</a>
-                <a id="Login">Se connecter</a>
-                <a id="Register">S'inscrire</a>
-            </div>
-        </div>
-    </header>
 
 
     <div class="scrollbar" id="scrolly">
@@ -76,7 +51,6 @@ firebase.initializeApp(firebaseConfig);
 
 firebase.auth().onAuthStateChanged((user) => {
     if (user) {
-        location.replace("")
     }
 })
 

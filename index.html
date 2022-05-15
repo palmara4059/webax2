@@ -44,15 +44,15 @@
             <div class="containerLogin">
                 <span><i class="fa-solid fa-user-lock"></i></span>
                 <h3>Inscription</h3>
-                <form onsubmit="register()" id="loginForm" class="login-form">
+                <div>
                     <input id="pseudo" type="text" class="input" required placeholder="Pseudo" />
                     <input id="email" type="text" class="input" required placeholder="Adresse email" />
                     <input id="password" type="password" class="input" required placeholder="Mot de passe" />
                     <div class="btn-flex">
-                        <button class="loginBtn" type="submit">Inscription</button>
+                        <button class="loginBtn" onclick="register()">Inscription</button>
                         <p>J'ai déjà un <a href="./login">compte</a></p>
                     </div>
-                </form>
+                </div>
             </div>
         </div>
     </div>

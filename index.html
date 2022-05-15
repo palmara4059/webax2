@@ -76,7 +76,7 @@ firebase.initializeApp(firebaseConfig);
 
 firebase.auth().onAuthStateChanged((user) => {
     if (user) {
-        location.replace("./index.html")
+        location.replace("")
     }
 })
 
@@ -109,26 +109,6 @@ async function register() {
     }
 }
 </script>
-
-    <script>
-        function functionMenu() {
-            document.getElementById("menuDrop").classList.toggle("show");
-        }
-
-        window.onclick = function (event) {
-            if (!event.target.matches('.dropbtn')) {
-                var dropdowns = document.getElementsByClassName("dropdown-content");
-                var i;
-                for (i = 0; i < dropdowns.length; i++) {
-                    var openDropdown = dropdowns[i];
-                    if (openDropdown.classList.contains('show')) {
-                        openDropdown.classList.remove('show');
-                    }
-                }
-            }
-        }       
-    </script>
-
 </body>
 
 </html>
